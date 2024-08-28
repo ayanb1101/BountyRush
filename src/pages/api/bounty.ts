@@ -175,7 +175,6 @@ export default function handler(req:any,res:any){
                 return;
             }
 
-            console.log('Fields:', fields.hsl[0]);
 
             const score = calculateScore(fields as unknown as FormValues<string[]>)
     
