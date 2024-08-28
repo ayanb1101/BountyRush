@@ -153,7 +153,7 @@ function convertLastSixDigitsToZero(number:number) {
     // }
 
     // Convert the number to a string, take the first 4 digits, and append six zeros.
-    let result = number.toString().slice(0, 4) + "00000";
+    let result = Math.round((number/10000)*10000)
 
     return result;
 }
